@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
-function StudentInfo() {
+
+export function StudentInfo() {
     return (
         <div>
-            <h1>Student Information</h1>
             <p>Name: Samarth Bhasin</p>
-            <Link href=""></Link>   
+            <p>GitHub Repository Link: <Link href="https://github.com/bhasinsamarth/cprg306-assignments">"https://github.com/bhasinsamarth/cprg306-assignments"</Link></p>
 
         </div>
     );
