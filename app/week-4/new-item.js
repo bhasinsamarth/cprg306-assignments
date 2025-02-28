@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import { useState } from "react";
 
@@ -8,24 +9,21 @@ export default function NewItem() {
 
     function increment() {
         setQuantity(quantity + 1);
-        if (quantity >= 20) {
-            setQuantity(20);
-        }
+    
     }
 
     function decrement() {
         setQuantity(quantity - 1);
-        if (quantity <= 1) {
-            setQuantity(1);
-        }
+        
     }
 
     return (
-        <div className="bg-gray-200 p-5 rounded-xl w-max h-min display:flex items-center flex-1 ">
-            <button onClick={increment} className="px-5 py-5 border-2 border-black rounded-xl m-5" disabled={quantity >= 20}>+</button>
-            <button onClick={decrement} className="px-5 py-5 border-2 border-black rounded-xl m-5" disabled={quantity <= 1}>- </button>
+        <div className="bg-gray-800 p-5 rounded-xl w-max h-min flex items-center flex-1 ">
+            <button onClick={increment} className=" border-white rounded-md px-1 bg-white mr-1 w-5 text-black disabled:bg-gray-500" disabled={quantity >= 20}>+</button>
+            <input type="text" className="bg-white text-black text-center w-20 h- rounded-md" value={quantity} readOnly />
+            <button onClick={decrement} className=" rounded-md mx-1 bg-white w-5 text-black disabled:bg-gray-500" disabled={quantity <= 1}>-</button>
 
-            <p className="text-xl text-center">Quantity: {quantity}</p>
+            
         </div>
     );
 

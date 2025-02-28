@@ -39,9 +39,7 @@
 
         function decrement(e) {
             e.preventDefault();
-            if (quantity > 1) {
-                setQuantity(quantity - 1);
-            }
+            setQuantity(quantity - 1);   
         }
 
         return (
