@@ -18,12 +18,12 @@ export default function NewItem() {
     }
 
     return (
-        <div className="bg-gray-800 p-5 rounded-xl w-max h-min flex items-center flex-1 ">
-            <button onClick={increment} className=" border-white rounded-md px-1 bg-white mr-1 w-5 text-black disabled:bg-gray-500" disabled={quantity >= 20}>+</button>
-            <input type="text" className="bg-white text-black text-center w-20 h- rounded-md" value={quantity} readOnly />
-            <button onClick={decrement} className=" rounded-md mx-1 bg-white w-5 text-black disabled:bg-gray-500" disabled={quantity <= 1}>-</button>
+        <div className="bg-gray-800 p-5 rounded-xl w-min h-min flex flex-1 ">
+            <button onClick={increment} className=" rounded-md bg-white w-5 text-black disabled:bg-gray-500" disabled={quantity >= 20}>+</button>
+            <input type="text" className="bg-white text-black text-center w-20 h-max rounded-md mx-1" value={quantity} readOnly />
+            <button onClick={decrement} className=" rounded-md bg-white w-5 text-black disabled:bg-gray-500" disabled={quantity <= 1}>-</button>
 
-            
+
         </div>
     );
 

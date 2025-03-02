@@ -43,20 +43,16 @@
         }
 
         return (
-
             <form onSubmit={handleSubmit} className="bg-gray-100 w-96 m-auto p-5 rounded-xl flex flex-col justify-start">
-
-                <label >
+                <label>
                     Name:
                     <input type="text" value={name} onChange={(e) => nameChangeHandler(e)} />
                 </label>
-
                 <label className="flex flex-row ">
                     Quantity: {quantity}
                     <button onClick={(e) => increment(e)} className=" w-7 h-7 border-2 border-black rounded-sm mr-1">+</button>
                     <button onClick={(e) => decrement(e)} className="w-7 h-7 border-2 border-black rounded-sm justify-center" disabled={quantity <= 1}>-</button>
                 </label>
-                
                 <label>
                     Category:
                     <select value={category} onChange={(e) => setCategory(e.target.value)}>
@@ -74,12 +70,8 @@
                         <option value="other">Other</option>
                     </select>
                 </label>
-
                 <button className="bg-blue-500 text-white rounded-md p-2 m-2" type="submit">Submit</button>
-
-                
             </form>
-            
         );
 
 
