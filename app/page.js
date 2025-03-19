@@ -11,6 +11,7 @@ export default function Page() {
                 <p>Week-4 assignment: <Link href="./week-4" className='italic hover:underline hover:text-blue-400'>Week 4</Link></p>
                 <p>Week-5 assignment: <Link href="./week-5" className='italic hover:underline hover:text-blue-400'>Week 5</Link></p>
                 <p>Week-6 assignment: <Link href="./week-6" className='italic hover:underline hover:text-blue-400'>Week 6</Link></p>
+                <p>Week-7 assignment: <Link href="./week-7" className='italic hover:underline hover:text-blue-400'>Week 7</Link></p>
             </div>
         </main>
     );
